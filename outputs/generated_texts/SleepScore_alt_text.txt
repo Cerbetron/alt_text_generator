@@ -1,0 +1,7 @@
+Page 5 - Image 1: The image shows a scatter plot comparing deep sleep and REM sleep. The scatter plot displays data points colored based on sleep score. For users with screen readers, a brief alt-text description could be:  Scatterplot showing the relationship between deep sleep and REM sleep. Dots are colored based on sleep score.
+(Note: ⚠️ Image is mostly white)
+
+Page 5 - Image 2: The image shows a line graph tracking sleep scores over time. The graph shows sleep scores fluctuating between 20 and 100 from December 29, 2024 to April 6.
+(Note: ⚠️ Image is mostly white)
+
+Page 5 - Image 3: The image shows a graph with three blue histograms. The graph is titled Distribution of Sleep Metrics. The graphs are labeled as follows: Deep Sleep Distribution, REM Sleep Distribution, and Sleep Score Distribution.   A brief alt-text for this image within 2 lines, suitable for screen readers:  Bar graphs showing distribution of deep sleep, REM sleep and sleep scores.  Three blue histograms displaying sleep metrics.

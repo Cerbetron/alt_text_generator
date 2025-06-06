@@ -1,0 +1,4 @@
+Page 1 - Image 1: The image contains equations for calculating a tracking score, which involves a base score and consistency. The base score is determined by an exponential formula, and consistency depends on standard deviation and average meals logged. Definitions and explanations of variables are provided, along with a description of the window size used in calculations.
+(Note: ⚠️ Image is mostly white)
+
+Page 1 - Image 2: Alt-text: Image shows a formula for calculating the Tracking Score, which is the minimum of meals logged divided by 4, multiplied by 100, and capped at 100. The explanation states the target is 4 meals per day, and logging more meals doesnt increase the score beyond 100%.

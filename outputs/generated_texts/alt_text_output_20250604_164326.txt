@@ -1,0 +1,7 @@
+Page 5 - Image 1: Scatter plot showing Deep Sleep versus REM Sleep, with points colored according to Sleep Score. The x-axis represents Deep Sleep, and the y-axis represents REM Sleep. Colors range from purple to yellow, indicating lower to higher Sleep Scores.
+(Note: ⚠️ Image is mostly white)
+
+Page 5 - Image 2: Line graph titled Sleep Score Over Time showing sleep scores from December 29, 2024, to April 6, 2025. The scores fluctuate between 20 and 100, with frequent peaks and troughs.
+(Note: ⚠️ Image is mostly white)
+
+Page 5 - Image 3: Bar chart titled Distribution of Sleep Metrics showing three graphs: Deep Sleep Distribution, REM Sleep Distribution, and Sleep Score Distribution. Each graph displays varying counts of sleep metrics on the y-axis with corresponding sleep stages and scores on the x-axis.

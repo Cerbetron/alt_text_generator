@@ -1,0 +1,4 @@
+Page 1 - Image 1: The image shows formulas for calculating a tracking score using BaseScore and Consistency, with parameters including a tuning factor, standard deviation, and average meals logged. It explains a window size starting at 7 days, increasing to 10, for score calculation flexibility and stability.
+(Note: ⚠️ Image is mostly white)
+
+Page 1 - Image 2: The image shows a formula for calculating a Tracking Score, which equals the minimum of meals logged divided by 4, multiplied by 100, or 100. The explanation states the target is 4 meals per day, with a cap at 100% to prevent over-logging.

@@ -1,0 +1,4 @@
+Page 1 - Image 1: The image shows a formula for calculating a tracking score, which includes a base score and consistency factor. It defines parameters such as α (tuning factor), σ (standard deviation), and m (average meals logged). A description explains that the calculation window starts at 7 days, increases to 10, and remains there for future calculations.
+(Note: ⚠️ Image is mostly white)
+
+Page 1 - Image 2: Alt-text: A formula for Tracking Score is shown: the minimum of meals logged divided by 4, multiplied by 100, or 100. The explanation notes that logging 4 meals per day results in a 100% score, capped to prevent inflation from over-logging.

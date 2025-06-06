@@ -1,0 +1,8 @@
+Page 1 - Image 1: Equation showing weekly_met as the sum from i equals 1 to 7 of met_min sub i.
+
+Page 2 - Image 1: Mathematical formula with two equations. First: \( m_i = \min(1.15, 0.85 + 0.15 \times (\frac{\text{met\_min}}{T_d})) \). Second: \( T_d = \frac{T_a}{7} \).
+
+Page 3 - Image 1: Mathematical equation showing: M equals the minimum of one-seventh times the sum from i equals 1 to 7 of m sub i, and 1.15.
+
+Page 3 - Image 2: Formula for R equals weekly met over Ta, indicating volume versus target, multiplied by M for momentum, times one minus P for penalty, times A for age factor, times W for weight factor.
+(Note: ⚠️ Image dimensions too small or unbalanced)

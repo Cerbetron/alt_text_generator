@@ -1,0 +1,8 @@
+Page 1 - Image 1: The image shows a mathematical formula: weekly_met equals the sum from i equals 1 to 7 of met_min subscript i.
+
+Page 2 - Image 1: The image shows mathematical equations. The first equation is \( m_i = \min(1.15, 0.85 + 0.15 \times \left(\frac{\text{met\_min}}{T_d}\right)) \). The second equation is \( T_d = \frac{T_a}{7} \).
+
+Page 3 - Image 1: The image shows a mathematical formula: \( M = \min \left( \frac{1}{7} \sum_{i=1}^{7} m_i, 1.15 \right) \). It calculates the minimum between the average of seven variables \( m_i \) and 1.15.
+
+Page 3 - Image 2: Mathematical formula for R includes terms: weekly_met over T_a (Volume vs. Target), multiplied by M (momentum), 1 minus P (penalty), A (age factor), and W (weight factor).
+(Note: ⚠️ Image dimensions too small or unbalanced)

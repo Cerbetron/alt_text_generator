@@ -1,0 +1,4 @@
+Page 1 - Image 1: A mathematical formula for calculating a tracking score is shown, involving BaseScore and Consistency. Variables include alpha, sigma, and m, with explanations. The text below describes how the window size affects calculations, starting at 7 days and increasing to 10 for stability.
+(Note: ⚠️ Image is mostly white)
+
+Page 1 - Image 2: Alt-text: The image shows a formula for a Tracking Score, which is the minimum of meals logged divided by 4, multiplied by 100, or 100. The explanation notes that logging 4 meals per day results in a 100% score, with a cap at 100% to prevent over-logging.

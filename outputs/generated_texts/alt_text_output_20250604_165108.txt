@@ -1,0 +1,4 @@
+Page 1 - Image 1: The image contains a formula for calculating a tracking score, which is the product of BaseScore and Consistency. BaseScore is a function of a tuning factor (α) and average meals logged (m). Consistency depends on a standard deviation (σ). A note explains that the tracking score window size starts at 7 days, increases to 10, and then stabilizes.
+(Note: ⚠️ Image is mostly white)
+
+Page 1 - Image 2: The image shows a formula for calculating a Tracking Score based on meals logged. It divides meals logged by 4, multiplies by 100, and takes the minimum with 100. An explanation notes the target is 4 meals per day for a score of 100%, capped at 100% for more than 4 meals to prevent inflation.

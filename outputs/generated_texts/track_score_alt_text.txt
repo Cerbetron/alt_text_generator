@@ -1,0 +1,4 @@
+Page 1 - Image 1: Formula for calculating a tracking score based on base score and consistency, with parameters and window size explanation.
+(Note: ⚠️ Image is mostly white)
+
+Page 1 - Image 2: Formula and explanation for a Tracking Score based on meals logged per day, with a cap at 100% for logging four or more meals.

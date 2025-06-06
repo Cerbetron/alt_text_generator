@@ -1,0 +1,4 @@
+Page 1 - Image 1: The image contains mathematical formulas for calculating a tracking score, including components for BaseScore and Consistency. Variables include a tuning factor, standard deviation, and average meals logged. A note explains the window size for calculations, starting at 7 days and increasing to 10.
+(Note: ⚠️ Image is mostly white)
+
+Page 1 - Image 2: The image shows a formula for calculating a tracking score: Tracking Score = min(Meals Logged / 4 × 100, 100). The explanation describes how the score measures the consistency of logging meals, with a target of four meals per day to achieve 100%. The score is capped at 100% to prevent over-logging.

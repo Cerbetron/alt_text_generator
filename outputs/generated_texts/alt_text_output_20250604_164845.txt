@@ -1,0 +1,8 @@
+Page 1 - Image 1: The image shows a mathematical formula: weekly_met equals the sum from i equals 1 to 7 of met_min sub i.
+
+Page 2 - Image 1: The image shows mathematical equations. The first equation is \( m_i = \min(1.15, 0.85 + 0.15 \times (\frac{\text{met\_min}}{T_d})) \). The second equation is \( T_d = \frac{T_a}{7} \).
+
+Page 3 - Image 1: The image shows a mathematical formula: M equals the minimum of the average of a summation from i equals 1 to 7 of m sub i, and 1.15.
+
+Page 3 - Image 2: Equation showing R as the product of several factors: weekly met over Ta (Volume vs. Target), momentum (M), penalty (1-P), age factor (A), and weight factor (W).
+(Note: ⚠️ Image dimensions too small or unbalanced)
