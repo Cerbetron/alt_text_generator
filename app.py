@@ -106,69 +106,68 @@ st.title(" PDF Image Alt-Text Generator")
 uploaded_file = st.file_uploader("📤 Upload PDF", type=["pdf"])
 
 if uploaded_file:
-    with st.status("⏳ Extracting and analyzing images..."):
-        pdf_bytes = uploaded_file.read()
-        images_by_page = extract_images_from_pdf(io.BytesIO(pdf_bytes))
+    pdf_bytes = uploaded_file.read()
+    images_by_page = extract_images_from_pdf(io.BytesIO(pdf_bytes))
 
-        total_images = sum(len(imgs) for imgs in images_by_page.values())
-        progress = st.progress(0)
+    total_images = sum(len(imgs) for imgs in images_by_page.values())
+    progress = st.progress(0)
 
-        output_lines = []
-        flagged = []
-        logos = 0
-        processed = 0
+    output_lines = []
+    flagged = []
+    logos = 0
+    processed = 0
 
-        for page_num, images in images_by_page.items():
-            with st.expander(f"Page {page_num}"):
-                for idx, image in enumerate(images):
-                    processed += 1
-                    cleaned_img, is_logo, was_flagged, reason = preprocess_image(image)
+    for page_num, images in images_by_page.items():
+        with st.expander(f"Page {page_num}"):
+            for idx, image in enumerate(images):
+                processed += 1
+                cleaned_img, is_logo, was_flagged, reason = preprocess_image(image)
 
-                    alt_text = generate_alt_text(
-                        cleaned_img,
-                        selected_model,
-                        openai_key,
-                        groq_key,
-                        is_logo=is_logo,
-                        alt_line_count=alt_lines,
-                        language=language,
-                    )
+                alt_text = generate_alt_text(
+                    cleaned_img,
+                    selected_model,
+                    openai_key,
+                    groq_key,
+                    is_logo=is_logo,
+                    alt_line_count=alt_lines,
+                    language=language,
+                )
 
-                    label = label_output(page_num, idx + 1, alt_text)
-                    if was_flagged:
-                        label += f"\n(Note: ⚠️ {reason})"
-                        flagged.append(f"Page {page_num} - Image {idx + 1}: {reason}")
-                    if is_logo:
-                        logos += 1
+                label = label_output(page_num, idx + 1, alt_text)
+                if was_flagged:
+                    label += f"\n(Note: ⚠️ {reason})"
+                    flagged.append(f"Page {page_num} - Image {idx + 1}: {reason}")
+                if is_logo:
+                    logos += 1
 
-                    output_lines.append(label)
+                output_lines.append(label)
 
-                    card_html = f"""
-                    <div class='result-card'>
-                        <img src='data:image/png;base64,{image_to_base64(cleaned_img)}' />
-                        <p class='alt-text'>{alt_text}</p>
-                    </div>
-                    """
-                    st.markdown(card_html, unsafe_allow_html=True)
+                card_html = f"""
+                <div class='result-card'>
+                    <img src='data:image/png;base64,{image_to_base64(cleaned_img)}' />
+                    <p class='alt-text'>{alt_text}</p>
+                </div>
+                """
+                st.markdown(card_html, unsafe_allow_html=True)
 
-                    progress.progress(processed / total_images)
+                progress.progress(processed / total_images)
 
-        progress.empty()
+    progress.empty()
 
-        if flagged:
-            st.markdown("### ⚠️ Flagged Images")
-            for msg in flagged:
-                st.warning(msg)
+    if flagged:
+        st.markdown("### ⚠️ Flagged Images")
+        for msg in flagged:
+            st.warning(msg)
 
-        # Prepare output
-        alt_text_final = "\n\n".join(output_lines)
-        ensure_dir_exists("outputs/generated_texts")
-        pdf_name = uploaded_file.name.rsplit(".", 1)[0]
-        output_filename = f"{pdf_name}_alt_text.txt"
-        output_path = f"outputs/generated_texts/{output_filename}"
+    # Prepare output
+    alt_text_final = "\n\n".join(output_lines)
+    ensure_dir_exists("outputs/generated_texts")
+    pdf_name = uploaded_file.name.rsplit(".", 1)[0]
+    output_filename = f"{pdf_name}_alt_text.txt"
+    output_path = f"outputs/generated_texts/{output_filename}"
 
-        with open(output_path, "w", encoding="utf-8") as f:
-            f.write(alt_text_final)
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(alt_text_final)
 
     metrics = st.columns(3)
     metrics[0].metric("Images", total_images)
