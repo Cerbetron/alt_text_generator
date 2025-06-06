@@ -9,19 +9,24 @@ from utils.helpers import label_output, ensure_dir_exists
 
 st.set_page_config(page_title=" PDF Alt-Text Generator", layout="wide")
 
-st.markdown("""
+st.markdown(
+    """
     <style>
     html, body, .main, .block-container {
         background-color: #0e0e0e !important;
         color: #ffffff !important;
     }
-    .stTextInput>div>div>input, .stTextArea textarea {
+    .stTextInput>div>div>input,
+    .stTextArea textarea,
+    .stNumberInput input {
         background-color: #1c1c1c !important;
         color: #00ffcc !important;
         border: 1px solid #00bfff;
         border-radius: 8px;
     }
-    .stSelectbox div, .stDownloadButton button, .stButton>button {
+
+    .stSelectbox div[data-baseweb="select"] {
+        width: 100%;
         background: linear-gradient(145deg, #00ffdd, #0078ff);
         color: white !important;
         font-weight: bold;
@@ -29,9 +34,23 @@ st.markdown("""
         border-radius: 10px;
         padding: 6px 14px;
     }
-    .stSidebar { background-color: #121212 !important; }
+
+    .stButton>button, .stDownloadButton button {
+        background: linear-gradient(145deg, #00ffdd, #0078ff);
+        color: white !important;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        padding: 6px 14px;
+    }
+
+    .stSidebar {
+        background-color: #121212 !important;
+    }
     </style>
-""", unsafe_allow_html=True)
+    """,
+    unsafe_allow_html=True,
+)
 
 with st.sidebar:
     st.image("https://img.icons8.com/fluency/96/pdf.png", width=80)
